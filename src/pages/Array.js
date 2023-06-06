@@ -3,13 +3,13 @@ import { useState } from "react";
 const Array = () => {
   const [toggle, setToggle] = useState(false);
   const [arrdata, setArrData] = useState([
-    { name: "John Doeesa", id: 1 },
+    { name: "John Doe", id: 1 },
     { name: "Jane Doe", id: 2 },
     { name: "Billy Doe", id: 3 }
   ]);
   const ToggleButton = (data, flag) => {
     const index = arrdata.findIndex((el) => el.id === data);
-    if (flag === "Shows") {
+    if (flag === "Show") {
       if (index !== -1) {
         const updatedItem = { ...arrdata[index], active: true };
         const updatedArray = [...arrdata];
