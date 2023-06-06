@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef,} from "react";
+import DropdownMenu from "./Json";
 
 const Counter = () => {
   const [count, setCount] = useState(0);
@@ -38,6 +39,7 @@ const Counter = () => {
       <br />
       <br />
       <button onClick={Reset}>Reset</button>
+      <DropdownMenu/>
     </div>
   );
 };
